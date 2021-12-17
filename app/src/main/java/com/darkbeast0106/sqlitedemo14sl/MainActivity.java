@@ -32,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
         String hash3 = BCrypt.hashpw(password, BCrypt.gensalt());
 
         boolean siker1 = BCrypt.checkpw(password, hash);
-        boolean siker2 = BCrypt.checkpw(password, hash);
-        boolean siker3 = BCrypt.checkpw(password, hash);
+        boolean siker2 = BCrypt.checkpw(password, hash2);
+        boolean siker3 = BCrypt.checkpw(password, hash3);
 
         String s = hash+" - "+String.valueOf(siker1)+"\n";
         s+= hash2+" - "+String.valueOf(siker2)+"\n";
